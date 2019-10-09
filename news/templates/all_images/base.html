@@ -11,9 +11,10 @@
     <title> galley </title>
   {% endif %}
 
-  {% block styles %}
+ {% block styles %}
     {% bootstrap_css %}
-  {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/baseimage.css' %}">
+ {% endblock %}
 
 </head>
 <body>
