@@ -13,8 +13,8 @@
 
   <div class="row">
 
-    {% if categories %}
-    {% for category in cat %}
+    {% if thecat %}
+    {% for category in thecat %}
     <div class="col-sm-6 col-md-3">
       <div class="card">
         <a data-caption="  Category :{{category.category}} <br> Location:{{category.location}}   " 
@@ -23,9 +23,9 @@
 
         </a>
       </div>
-      <!-- <button class="btn btn-default" style="text-align:center;" onclick="copyLink()" data-toggle="modal"
-        data-target="#linkModal">Copy Link</button>
-      <input type="text" value="127.0.0.1:8000/media/images/{{image.image.url}}" id="linkedimage" hidden>
+      <button class="btn btn-default" style="text-align:center;" onclick="copyLink()" data-toggle="modal"
+        data-target="#linkModal">Copy image</button>
+      <input type="text" value="127.0.0.1:8000/media/images/{{pic.image.url}}" id="linkedimage" hidden>
      
       <div class="modal fade" id="linkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
@@ -43,21 +43,21 @@
 
             <div class="modal-body">
               <div class="text-center">
-                <i class="fas fa-check fa-4x mb-3 animated rotateIn" style="color:#00C853"></i>
+                <i class="fas fa-check fa-4x mb-3 animated rotateIn" style="color:rgb(157, 200, 0)"></i>
                 <p class="text-muted">Link Successfully Copied</p>
               </div>
-            </div> -->
+            </div>
 
             
-            <!-- <div class="modal-footer justify-content-center">
+             <div class="modal-footer justify-content-center">
              
               <a type="button" class="btn btn-success" data-dismiss="modal">Close</a>
               <a href="{{category.image.url}}" target="_blank" class="btn btn-success">View Full Image</a>
             </div>
-          </div> -->
+          </div>
           <!--/.Content-->
-        <!-- </div>
-      </div> -->
+        <div>
+      </div> 
       <!-- Central Modal Medium Success-->
 
 

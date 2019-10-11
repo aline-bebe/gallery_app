@@ -18,8 +18,8 @@ def search_results(request):
         
         message = f"{search_term}"
         
-        return render(request, 'all_images/search.html',{"message":message,"cat":searched_categories})
+        return render(request, 'all_images/search.html',{"message":message,"thecat":searched_categories})
     
     else:
         message = "You haven't searched for any term"
-        return render(request, 'all_images/search.html',{"message":message,"cat":searched_categories})
+        return render(request, 'all_images/search.html',{"message":message,"thecat":searched_categories })
