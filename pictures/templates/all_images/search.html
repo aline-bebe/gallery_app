@@ -14,12 +14,12 @@
   <div class="row">
 
     {% if categories %}
-    {% for category in categories %}
+    {% for category in cat %}
     <div class="col-sm-6 col-md-3">
       <div class="card">
         <a data-caption="  Category :{{category.category}} <br> Location:{{category.location}}   " 
-          href="{{category.image.url}}" data-fancybox class="card-img-top" style='width:400px; height:600px'>
-          <img class="img-responsive" style='width:400px; height:300px' src="{{category.image.url}}" alt="image">
+          href="{{category.image.url}}" data-fancybox class="card-img-top" style='width:300px; height:250px'>
+          <img class="img-responsive" style='width:300px; height:250px' src="{{category.image.url}}" alt="image">
 
         </a>
       </div>
