@@ -3,8 +3,8 @@
 <div class="container">
 
   <div class="row">
-    {% if categories %}
-    <h2>Found {{ categories|length }} of searched term {{message}}</h2>
+    {% if thecat %}
+    <h2>Found {{ thecat|length }} of searched term {{message}}</h2>
     {% else %}
     <h2> Found 0 images for the search term {{message}}</h2>
     {% endif %}
@@ -43,7 +43,7 @@
 
             <div class="modal-body">
               <div class="text-center">
-                <i class="fas fa-check fa-4x mb-3 animated rotateIn" style="color:rgb(157, 200, 0)"></i>
+                <i class="fas fa-check fa-4x mb-3 animated rotateIn" style="color:rgb(53, 54, 48)"></i>
                 <p class="text-muted">Link Successfully Copied</p>
               </div>
             </div>

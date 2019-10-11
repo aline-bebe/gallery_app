@@ -2,8 +2,7 @@
 {% extends 'all_images/base.html' %}
 {% block content %}
 
-
-
+{{block.super}}
 <!-- <div class="container"> -->
 
   <!-- Looping through image   -->
@@ -13,21 +12,12 @@
        
     <!-- displaying images -->
    
-     <!--Display news Article images  -->
-     <!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <img class="img-responsive" style='width:300px; height:250px' src="{{pic.image.url}}" alt="image">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <p> Category :{{pic.category}}</p>
-            <p>Location:{{pic.location}} </p>
-            <p>{{pic.image_description}}</p>
-           
-        </div>
-    </div> -->
+
     <div class="col-md-3">
     <div class="thumbnail">
         <div class="view overlay">
-    <a data-caption="  Category :{{pi.category}} <br> Location:{{pic.location}}  <br> {{pic.image_description}}   "
-      href="{{pic.image.url}}" data-fancybox class="card-img-top" style='width:400px; height:600px'>
+    <a data-caption="  Category :{{pic.category}}  Location:{{pic.location}} {{pic.image_description}}   "
+      href="{{pic.image.url}}" data-fancybox class="card-img-top" style='width:300px; height:250px'>
       <img class="img-responsive" style='width:300px; height:250px' src="{{pic.image.url}}" alt="image">
 
     </a>
