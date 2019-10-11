@@ -31,10 +31,9 @@ class Category(models.Model):
 
 
 class Image(models.Model):
-    image = models.ImageField(upload_to = 'images/')
+    image = models.ImageField(upload_to = 'images/',null= True)
     image_name = models.CharField(max_length =30)
     image_description = models.TextField(max_length=5000)
-    # date_taken = models.DateTimeField(auto_now_add=True)
     location = models.ForeignKey(Location)
     category = models.ForeignKey(Category)
     

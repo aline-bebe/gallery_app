@@ -1,4 +1,4 @@
-{% load bootstrap4 %}
+{% load bootstrap3 %}
 {% load static%}
 <!DOCTYPE html>
 <html>
@@ -6,9 +6,9 @@
   <meta charset="utf-8">
 
   {% if title %}
-  <title>galley - {{title}}</title>
+  <title>gallery - {{title}}</title>
   {% else %}
-    <title> galley </title>
+    <title> gallery </title>
   {% endif %}
 
  {% block styles %}
@@ -19,7 +19,7 @@
 </head>
 <body>
     {% include "navbar.html" %}
-
+    {% block content %}{% endblock %}
     {% block scripts %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      {% bootstrap_javascript %}

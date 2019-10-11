@@ -7,6 +7,7 @@ from .models import Image,Category,Location
 
 def welcome(request):
     images = Image.objects.all()
+    print(images)
     return render(request, 'all_images/index.html',{"images":images})
 
 

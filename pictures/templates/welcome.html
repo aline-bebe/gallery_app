@@ -1,0 +1,23 @@
+{% extends 'all_images/base.html' %}
+{% block content %}
+
+{% for pic in images %}
+
+
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <img class="img-responsive"  src="{{pic.image.url}}" alt="image">
+</div>
+
+
+
+
+<h2 class="text-center">There No News Items</h2>
+{% endfor %}
+
+
+
+<!-- </div> -->
+
+{% endblock %}
+
