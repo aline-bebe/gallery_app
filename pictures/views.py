@@ -7,7 +7,7 @@ from .models import Image,Category,Location
 
 def welcome(request):
     images = Image.objects.all()
-    return render(request, 'all-images/index.html',{"images":images,})
+    return render(request, 'all_images/index.html',{"images":images})
 
 
 def search_results(request):
@@ -17,8 +17,8 @@ def search_results(request):
         
         message = f"{search_term}"
         
-        return render(request, 'all-images/search.html',{"message":message,"categories":searched_categories})
+        return render(request, 'all_images/search.html',{"message":message,"categories":searched_categories})
     
     else:
         message = "You haven't searched for any term"
-        return render(request, 'all-images/search.html',{"message":message,"categories":searched_categories})
+        return render(request, 'all_images/search.html',{"message":message,"categories":searched_categories})
