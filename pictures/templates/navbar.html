@@ -4,19 +4,20 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="{%url 'welcome'%}">galllery</a>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Location<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+        <li><a href="{% url 'location' 6 %}">America</a></li>
+        <li><a href="{% url 'location' 7 %}">Nairobi</a></li>
+        <li><a href="{% url 'location' 8 %}">Mombasa</a></li>
+        <li><a href="{% url 'location' 9 %}">Sagana</a></li>
+        <li><a href="{% url 'location' 10 %}">Dubai</a></li>
+  
+        </ul>
+      </li>
       
     </div>
-    <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Location<span class="caret"></span></a>
-      <ul class="dropdown-menu">
-      <li><a href="{% url 'location' 6 %}">America</a></li>
-      <li><a href="{% url 'location' 7 %}">Nairobi</a></li>
-      <li><a href="{% url 'location' 8 %}">Mombasa</a></li>
-      <li><a href="{% url 'location' 9 %}">Sagana</a></li>
-      <li><a href="{% url 'location' 10 %}">Dubai</a></li>
-
-      </ul>
-    </li>
+   
 
     <!-- Adding a search form  -->
     <div class="col-sm-4 col-md-4 navbar-right">
