@@ -8,13 +8,13 @@ from .models import Image,Category,Location
 def welcome(request):
     images = Image.objects.all()
     print(images)
-    return render(request, 'all_images/index.html',{"images":images})
+    return render(request, 'all_images/index.html',{"images":images,"location":location})
 
 
 def location(request,location_id):
     photos=Image.objects.filter(location_id=location_id)
 
-    return render(request,'location.html',{"photos":photos})
+    return render(request,'all_images/location.html',{"photos":photos})
 
 
 def search_results(request):
