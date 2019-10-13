@@ -8,16 +8,18 @@ This is a gallery application. It allows a user(admin) to post pictures, add loc
 ## TECHNOLOGY USED
 * find visual studio
 * ubuntu
-* pip3 install flask
-* install python3.6
+* install pip
+* install django
 
   
 ## BDD
-* The user visits the app url in any browser and interacts with the application
-* The user can view the news sources and click on the news sources to view the news articles
+* User should wants to search for an image
+* User should also  view the image descriptions
+* admin should  post and  upload an image
+
 
 ## PROJECT LINK
-   https://github.com/aline-bebe/news_highlites
+   https://github.com/aline-bebe/gallery_app
 
 
 
