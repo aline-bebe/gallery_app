@@ -1,13 +1,10 @@
 # gallery_app
-# news_highlites
 
-The News Highlight App allows a user to view news highlights from various sources and articles
+A gallery application that hubs different categories of photos and pictures.
 ## Author
 this is Aline Ingabire, Am the own who developed this site.
 ## DESCRIPTION
-### news highlities
-News Highlight is a web application that displays a list of news sources from around the world. A user is able to go the source page to view the news sources and onwards views articles of that news source. 
-
+This is a gallery application. It allows a user(admin) to post pictures, add locations category and locations for the images. Other users can view the images and search for images based on category.
 ## TECHNOLOGY USED
 * find visual studio
 * ubuntu
