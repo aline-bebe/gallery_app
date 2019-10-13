@@ -54,9 +54,9 @@ class Image(models.Model):
         return images
     
     @classmethod
-    def filter_by_location(cls, location):
-        images = cls.objects.filter(location=location)
-        return images
+    def filter_by_location(cls,location_id):
+        photos=cls.objects.filter(id=location_id)
+        return photos
     
     @classmethod
     def update_image(cls, id):
