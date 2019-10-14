@@ -53,10 +53,11 @@ class Image(models.Model):
         images = cls.objects.filter(location=location)
         return images
     
-    @classmethod
-    def filter_by_location(cls,location_id):
-        photos=cls.objects.filter(id=location_id)
-        return photos
+  
+
+    def filter(cls,location):
+        imaje = cls.objects.filter(location__location__icontains=location)
+        return imaje
     
     @classmethod
     def update_image(cls, id):
