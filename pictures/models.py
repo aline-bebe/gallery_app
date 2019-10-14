@@ -54,8 +54,8 @@ class Image(models.Model):
         return images
     
   
-
-    def filter(cls,location):
+    @classmethod
+    def filterloc(cls,location):
         imaje = cls.objects.filter(location__location__icontains=location)
         return imaje
     

@@ -8,14 +8,14 @@ from .models import Image,Category,Location
 def welcome(request):
     images = Image.objects.all()
     print(images)
-    # location = Location.objects.all()
+    location = Location.objects.all()
     return render(request, 'all_images/index.html',{"images":images,"location":location})
 
 
-def location(request,location):
+def location(request):
   if 'location' in request.GET and request.GET['location']:
       location = request.GET.get('location')
-      found = Image.filter(location)
+      found = Image.filterloc(location)
       message = f'{location}'
       location = Location.objects.all()
       return render(request,'all_images/location.html',{"message":message,"found":found,"location":location})
