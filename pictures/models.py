@@ -56,8 +56,8 @@ class Image(models.Model):
   
     @classmethod
     def filterloc(cls,location):
-        imaje = cls.objects.filter(location__location__icontains=location)
-        return imaje
+        image = cls.objects.filter(location__location__icontains=location)
+        return image
     
     @classmethod
     def update_image(cls, id):

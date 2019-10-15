@@ -1,56 +1,16 @@
 <div class="row">
   {% if found %}
-  {% for loca in found %}
+  {% for lo in found %}
   <div class="col-md-3">
       <div class="thumbnail">
           <div class="view overlay">
-            <p>{{loca.location.location}}</p>
-      <a data-caption="  Category :{{loca.category}} <br> Location:{{loca.location}} <br> {{loca.image_description}}   "
-        href="{{loca.image.url}}" data-fancybox class="card-img-top" style='width:300px; height:250px'>
-        <img class="img-responsive" style='width:300px; height:250px' src="{{loca.image.url}}" alt="image">
+            <p>{{lo.location.location}}</p>
+      <a data-caption="  Category :{{lo.category}} <br> Location:{{lo.location}} <br> {{lo.image_description}}   "
+        href="{{lo.image.url}}" data-fancybox class="card-img-top" style='width:300px; height:250px'>
+        <img class="img-responsive" style='width:300px; height:250px' src="{{lo.image.url}}" alt="image">
   
       </a>
-      <button class="btn btn-default" style="text-align:center;" onclick="copyLink()" data-toggle="modal"
-      data-target="#linkModal">copy image</button>
-    <input type="text" value="127.0.0.1:8000/media/images/{{loca.image.url}}" id="linkedImage" hidden>
-    <!-- Central Modal Medium Success -->
-    <div class="modal fade" id="linkModal" tabindex="-1" role="dialog"
-      aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-notify modal-success" role="document">
-        <!--Content-->
-        <div class="modal-content">
-          <!--Header-->
-          <div class="modal-header">
-            <p class="heading lead">Copy Link</p>
-  
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true" class="white-text">&times;</span>
-            </button>
-          </div>
-  
-          <!--Body-->
-          <div class="modal-body">
-            <div class="text-center">
-              <i class="fas fa-check fa-4x mb-3 animated rotateIn" data-delay="1s" style="color:rgb(88, 102, 94)"></i>
-              <p class="text-muted">Link Successfully Copied</p>
-            </div>
-          </div>
-  
-          <!--Footer-->
-          <div class="modal-footer justify-content-center">
-            <a type="button" class="btn btn-primary" data-dismiss="modal">Close</a>
-            <a href="{{loca.image.url}}" target="_blank" class="btn btn-primary">View Full Image</a>
-          </div>
-        </div>
-        <!--/.Content-->
-      </div>
-    </div>
-    <!-- Central Modal Medium Success-->
-  
-  </div>
-  <div>
-  
-  </div>
+      
   
   
   </div>
